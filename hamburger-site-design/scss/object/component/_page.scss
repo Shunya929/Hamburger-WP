@@ -1,0 +1,29 @@
+@use '../../foundation/mixin' as mix;
+.c-page__arcive {
+  height: 170px;
+  .c-img__main---archive--first {
+    display: none;
+    padding-top: 100px;
+    margin: 0 auto;
+  }
+  .c-img__main---archive--second {
+    width: 90%;
+    padding-top: 100px;
+  }
+  @include mix.mq(tab) {
+    .c-img__main---archive--first {
+      display: block;
+      margin: 0 auto;
+      padding-top: 100px;
+    }
+    .c-img__main---archive--second {
+      display: none;
+    }
+    @include mix.mq(pc) {
+      height: 249px;
+      .c-img__main---archive--first {
+        padding-top: 150px;
+      }
+    }
+  }
+}

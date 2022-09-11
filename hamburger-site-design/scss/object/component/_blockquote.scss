@@ -1,0 +1,9 @@
+@use '../../foundation/mixin' as mix;
+
+.c-blockquote--single {
+  background-color: #F5F5F5;
+  padding: 50px;
+  .c-cite--single {
+    padding-left: 15px;
+  }
+}

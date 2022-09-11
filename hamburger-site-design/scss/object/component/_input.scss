@@ -1,0 +1,56 @@
+@use '../../foundation/mixin' as mix;
+
+.form__header {
+  display: flex;
+  justify-content: center;
+  margin: 38px auto 0 auto;
+  gap: 10px;
+  padding-right: 7px;
+  i::before {
+    position: relative;
+    top: 12px;
+    left: 20px;
+    font-family: "Font Awesome 6 Free";
+    content: "\f002";
+    font-weight: 900;
+    font-size: 23px;
+    z-index: 1;
+  }
+  .c-input__header {
+    position: relative;
+    color: #707070;
+    background-color: #fff;
+    border: solid 1px #707070;
+    border-radius: 5px;
+    height: 46px;
+    width: 100%;
+    padding-left: 40px;
+    
+  }@include mix.mq(tab) {
+    width: 100%;
+    @include mix.mq(pc) {
+      width: initial;
+      margin: initial;
+    }
+  }
+}
+
+.label1 {
+  display: inline-block;
+  max-width: 400px;
+  width: 65%;
+  @include mix.mq(tab) {
+    width: 100%;
+  }
+}
+
+.label2 {
+  display: inline-block;
+  width: 80px;
+  @include mix.mq(tab) {
+    width: 100px;
+    @include mix.mq(pc) {
+      width: 140px;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+$breakpoint: (
+  sp: 'screen and (max-width: 767px)',
+  tab: 'screen and (min-width: 768px)',
+  pc: 'screen and (min-width: 1281px)'
+);
+
+@mixin mq($bp) {
+  @media #{map-get($breakpoint, $bp)} {
+   @content;
+  }
+}
+
+@mixin pic($value) {
+  position: relative;
+  height: $value;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
+  background-size: cover;
+  overflow-x: hidden; 
+}
+
+@mixin text {
+  text-align: left;
+  color: #fff;
+  font-size: 36px;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+@mixin txt($size,$color) {
+  text-align: left;
+  color: $color;
+  font-size: $size;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+@mixin underline($weight,$width) {
+  border-bottom: solid $weight #FFFFFF;
+  width: $width;
+}
+
+@mixin btn($radius,$width) {
+  position: absolute;
+  color: #707070;
+  background-color: #FFFFFF;
+  border-radius: $radius;
+  white-space: nowrap;
+}

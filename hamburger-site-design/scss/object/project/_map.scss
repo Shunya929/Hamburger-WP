@@ -1,0 +1,29 @@
+@use '../../foundation/mixin' as mix;
+
+.p-map__main {
+  overflow: visible;
+  min-height: 691px;
+  height: auto;
+  width: 100%;
+  background-color: black;
+  .l-container--map {
+    overflow: visible;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 40px;
+    .c-colorbox {
+      top: 0;
+      position: absolute;
+      background-color: rgba(0,0,0,0.3);
+      z-index: 10;
+      width: 100%;
+      height: 450px;
+      @include mix.mq(tab) {
+        height: 100%;
+        @include mix.mq(pc) {
+          width: 61%;
+        }
+      }
+    }
+  }
+}

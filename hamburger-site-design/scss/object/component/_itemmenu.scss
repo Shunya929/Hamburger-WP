@@ -1,0 +1,16 @@
+@use '../../foundation/mixin' as mix;
+
+.c-item-menu__archive {
+  width: 100%;
+  @include mix.mq(tab) {
+    display: flex;
+    height: 354px;
+    @include mix.mq(pc) {
+      height: 471px;
+    }
+  }
+}
+
+.c-item-menu__archive + .c-item-menu__archive {
+  margin-top: 20px;
+}

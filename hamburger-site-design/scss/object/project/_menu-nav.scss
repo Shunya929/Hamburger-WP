@@ -1,0 +1,59 @@
+@use '../../foundation/mixin' as mix;
+
+//top
+.p-menu-nav {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 40px 20px;
+  .l-container--first {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 60px;
+    min-height: 642px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .l-container--second {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 60px;
+    min-height: 643px;
+    height: auto;
+  }
+  @include mix.mq(tab) {
+    flex-direction: row;
+    justify-content: center;
+    padding: 40px;
+    gap: 40px;
+    .l-container--first {
+      min-height: 1193px;
+      width: 50%;
+      margin: 0;
+      padding: 0;
+    }
+    .l-container--second {
+      min-height: 1196px;
+      width: 50%;
+      margin: 0;
+      padding: 0;
+    }
+    @include mix.mq(pc) {
+      padding: 90px 82px 92px 81px;
+      gap: 60px;
+    }
+  }
+}
+
+//archive
+.p-menunav__archive {
+  width: 90%;
+  margin: 0 auto;
+}
+
+//single
+.p-menunav--single {
+  width: 90%;
+  margin: 0 auto;
+}

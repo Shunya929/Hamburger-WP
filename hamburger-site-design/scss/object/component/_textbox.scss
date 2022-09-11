@@ -1,0 +1,14 @@
+@use '../../foundation/mixin' as mix;
+
+.c-textbox {
+  .c-textbox--main {
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgba(247,247,247,0.5);
+  }
+}
+
+.c-textbox__menunav__archive {
+  padding: 23px 0 46px 0;
+  color: #3C2A10;
+}

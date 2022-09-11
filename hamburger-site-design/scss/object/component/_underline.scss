@@ -1,0 +1,24 @@
+@use '../../foundation/mixin' as mix;
+
+.c-underline--first {
+  @include mix.underline(4px,45px);
+  @include mix.mq(pc) {
+    @include mix.underline(4px,70px);
+  }
+}
+
+.c-underline--second {
+  @include mix.underline(2px,55px);
+  position: absolute;
+  z-index: 20;
+  top: 90px;
+  left: 10%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  @include mix.mq(tab) {
+    top: 110px;
+    @include mix.mq(pc) {
+      top: 120px;
+    }
+  }
+}

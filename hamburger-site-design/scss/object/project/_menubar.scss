@@ -1,0 +1,14 @@
+@use '../../foundation/mixin' as mix;
+
+.p-menubar__sidebar {
+  position: relative;
+  top: 212px;
+  display: none;
+  @include mix.mq(pc) {
+    display: block;
+  }
+}
+
+.p-menubar__sidebar.is-open {
+  display: block;
+}

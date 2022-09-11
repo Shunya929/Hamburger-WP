@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="335.947" height="22" viewBox="0 0 335.947 22">
+  <g id="iPhone_pagenavi" transform="translate(0.707)">
+    <g id="Group_7" data-name="Group 7" transform="translate(-414.291 -2249)">
+      <path id="Path_4" data-name="Path 4" d="M410.823,5451l-8.533,8.533,8.533,8.533" transform="translate(12 -3200)" fill="none" stroke="#707070" stroke-width="1"/>
+      <path id="Path_5" data-name="Path 5" d="M410.823,5451l-8.533,8.533,8.533,8.533" transform="translate(21 -3200)" fill="none" stroke="#707070" stroke-width="1"/>
+    </g>
+    <g id="Group_8" data-name="Group 8" transform="translate(748.824 2270.064) rotate(180)">
+      <path id="Path_4-2" data-name="Path 4" d="M410.823,5451l-8.533,8.533,8.533,8.533" transform="translate(12 -3200)" fill="none" stroke="#707070" stroke-width="1"/>
+      <path id="Path_5-2" data-name="Path 5" d="M410.823,5451l-8.533,8.533,8.533,8.533" transform="translate(21 -3200)" fill="none" stroke="#707070" stroke-width="1"/>
+    </g>
+    <text id="前へ" transform="translate(25.709 17)" fill="#707070" font-size="16" font-family="mplus-1m-regular, 'M\+ \31 m'"><tspan x="0" y="0">前</tspan><tspan y="0">へ</tspan></text>
+    <text id="次へ" transform="translate(277.709 17)" fill="#707070" font-size="16" font-family="mplus-1m-regular, 'M\+ \31 m'"><tspan x="0" y="0">次</tspan><tspan y="0">へ</tspan></text>
+  </g>
+</svg>

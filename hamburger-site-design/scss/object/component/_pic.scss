@@ -1,0 +1,114 @@
+@use '../../foundation/mixin' as mix;
+
+//--top--
+.p-main-visual {
+  background-image: url(/img/main-visual1.png);
+  @include mix.pic(285px);
+  @include mix.mq(pc) {
+    @include mix.pic(530px);
+  }
+}
+.l-container--first {
+  background-image: url(/img/main-visual2.png);
+  @include mix.pic(642px);
+}
+.l-container--second {
+  background-image: url(/img/main-visual3.png);
+  @include mix.pic(643px);
+}
+.p-map__main {
+  background-image: url(/img/map.svg);
+  @include mix.pic(691px);
+}
+
+//--archive--
+.p-mainvisual--archive {
+  background-image: url(/img/archive\ 1.svg);
+  @include mix.pic(283px); 
+  @include mix.mq(pc) {
+    @include mix.pic(239px);
+  }
+  &--search {
+    background-image: none;
+  }
+}
+
+
+.c-pic__menunav__archive {
+  background-image: url(/img/archive2.svg);
+  @include mix.pic(230px);
+  @include mix.mq(tab) {
+    @include mix.pic(354px);
+    width: 50%;
+    @include mix.mq(pc) {
+      @include mix.pic(471px);
+    }
+  }
+}
+
+//search
+.c-pic-mainvisual--archive {
+  display: block;
+  position: relative;
+  height: 283px;
+  overflow-x: hidden; 
+  width: 100%;
+  @include mix.mq(pc) {
+    height: 239px;
+  }
+}
+
+//--single--
+.p-mainvisual--single {
+  background-image: url(/img/single1.svg);
+  @include mix.pic(225px);
+  @include mix.mq(tab) {
+    @include mix.pic(500px);
+  }
+}
+
+.c-pic-menunav--single {
+  background-image: url(/img/single2.svg);
+  &--large {
+    @include mix.pic(264px);
+    margin-top: 60px;
+    margin-bottom: 60px;
+    @include mix.mq(tab) {
+      @include mix.pic(500px);
+    }
+  }
+  &--medium {
+    @include mix.pic(89px);
+    width: 43%;
+    @include mix.mq(tab) {
+      @include mix.pic(358px);
+    }
+  }
+  &--medium--third {
+    @include mix.pic(166px);
+    margin: 0 auto;
+    @include mix.mq(tab) {
+      @include mix.pic(358px);
+    }
+  }
+  &--small {
+    @include mix.pic(205px);
+    width: 100%;
+    @include mix.mq(tab) {
+      @include mix.pic(257px);
+      width: calc(100% / 2 - 10px);
+      @include mix.mq(pc) {
+        width: calc(100% / 3 - 14px);
+      }
+    }
+  }
+}
+
+//--page--
+.p-mainvisual--page {
+  background-image: url(/img/page1.svg);
+  @include mix.pic(225px);
+  @include mix.mq(tab) {
+    @include mix.pic(500px);
+  }
+}
