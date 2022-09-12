@@ -1314,12 +1314,12 @@ body.is-open {
 }
 @media screen and (min-width: 768px) {
   .label2 {
-    width: 100px;
+    width: 130px;
   }
 }
 @media screen and (min-width: 768px) and (min-width: 1281px) {
   .label2 {
-    width: 140px;
+    width: 170px;
   }
 }
 

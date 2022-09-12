@@ -48,9 +48,9 @@
   display: inline-block;
   width: 80px;
   @include mix.mq(tab) {
-    width: 100px;
+    width: 130px;
     @include mix.mq(pc) {
-      width: 140px;
+      width: 170px;
     }
   }
 }
