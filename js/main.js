@@ -1,5 +1,5 @@
 jQuery(function($){
-  (".js-hamburger").on("click",function($) {
+  $(".js-hamburger").on("click",function() {
     $.when(
       $(this).toggleClass("is-open"),
       $(".js-background--sidebar").toggleClass("is-open")
@@ -12,7 +12,7 @@ jQuery(function($){
       });
     });
 
-    (function($) {
+    $(function() {
       if (window.matchMedia("(min-width: 1281px)").matches) {
       } else {
         $('.js-hamburger').on('click');

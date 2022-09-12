@@ -9,7 +9,7 @@
   <title>Archive Page</title>
   <?php wp_head(); ?>
 </head>
-<body class="js-body">
+<body class="js-body" <?php body_class(); ?>>
   <article class="l-container">
     <header class="l-header">
       <div class="c-button__sidebar">
@@ -18,15 +18,9 @@
         </button>
       </div>
       <div class="l-flex-container__header">
-        <h1 class="c-txt-headline__header">Hamburger</h1>
-        <form class="form__header">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <label for="" class="label1">
-            <input type="text" name="name" class="c-input__header">
-          </label>
-          <label for="" class="label2">
-            <button type="button" name="name" value="value" class="c-btn__header">検索</button>
-          </label>
-        </form>
+        <h1 class="c-txt-headline__header"><?php bloginfo( 'name' ); ?></h1>
+
+        <?php get_search_form(); ?>
+        
       </div>
     </header>
