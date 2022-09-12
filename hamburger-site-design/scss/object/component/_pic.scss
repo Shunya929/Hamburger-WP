@@ -2,28 +2,28 @@
 
 //--top--
 .p-main-visual {
-  background-image: url(/img/main-visual1.png);
+  background-image: url('../img/main-visual1.png');
   @include mix.pic(285px);
   @include mix.mq(pc) {
     @include mix.pic(530px);
   }
 }
 .l-container--first {
-  background-image: url(/img/main-visual2.png);
+  background-image: url('../img/main-visual2.png');
   @include mix.pic(642px);
 }
 .l-container--second {
-  background-image: url(/img/main-visual3.png);
+  background-image: url('../img/main-visual3.png');
   @include mix.pic(643px);
 }
 .p-map__main {
-  background-image: url(/img/map.svg);
+  background-image: url('../img/map.svg');
   @include mix.pic(691px);
 }
 
 //--archive--
 .p-mainvisual--archive {
-  background-image: url(/img/archive\ 1.svg);
+  background-image: url('../img/archive\ 1.svg');
   @include mix.pic(283px); 
   @include mix.mq(pc) {
     @include mix.pic(239px);
@@ -35,7 +35,7 @@
 
 
 .c-pic__menunav__archive {
-  background-image: url(/img/archive2.svg);
+  background-image: url('../img/archive2.svg');
   @include mix.pic(230px);
   @include mix.mq(tab) {
     @include mix.pic(354px);
@@ -60,7 +60,7 @@
 
 //--single--
 .p-mainvisual--single {
-  background-image: url(/img/single1.svg);
+  background-image: url('../img/single1.svg');
   @include mix.pic(225px);
   @include mix.mq(tab) {
     @include mix.pic(500px);
@@ -68,7 +68,7 @@
 }
 
 .c-pic-menunav--single {
-  background-image: url(/img/single2.svg);
+  background-image: url('../img/single2.svg');
   &--large {
     @include mix.pic(264px);
     margin-top: 60px;
@@ -106,7 +106,7 @@
 
 //--page--
 .p-mainvisual--page {
-  background-image: url(/img/page1.svg);
+  background-image: url('../img/page1.svg');
   @include mix.pic(225px);
   @include mix.mq(tab) {
     @include mix.pic(500px);
