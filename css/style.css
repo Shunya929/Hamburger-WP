@@ -8,8 +8,7 @@ html {
   -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS */
   word-break: normal;
   -moz-tab-size: 4;
-  -o-tab-size: 4;
-     tab-size: 4;
+  tab-size: 4;
 }
 
 *,
@@ -60,8 +59,7 @@ abbr[title] {
   border-bottom: none; /* Remove the bottom border in Chrome 57 */
   /* Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari */
   text-decoration: underline;
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
 }
 
 a {
@@ -289,7 +287,6 @@ body {
   height: 100%;
   min-height: -webkit-fill-available;
   overflow-x: hidden;
-  background-color: red;
 }
 
 a {
@@ -297,8 +294,7 @@ a {
 }
 
 img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 ol {
@@ -740,8 +736,7 @@ body.is-open {
   font-weight: 500;
   line-height: 0.5;
   border: 0px;
-  -webkit-margin-before: 0;
-          margin-block-start: 0;
+  margin-block-start: 0;
 }
 @media screen and (min-width: 768px) {
   .p-hamburger.is-open .c-txt--changeable {
@@ -979,8 +974,7 @@ body.is-open {
   font-size: 20px;
   line-height: 1.5;
   font-weight: normal;
-  -moz-text-align-last: left;
-       text-align-last: left;
+  text-align-last: left;
   left: 15%;
 }
 .c-txt-itemname__sidebar:last-child {
@@ -1660,4 +1654,5 @@ front.html* ========================== */
 /* Component ------------ */
 /* Project ------------ */
 /* Utility ------------ */
+
 /*# sourceMappingURL=style.css.map */
