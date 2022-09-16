@@ -8,8 +8,7 @@ html {
   -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS */
   word-break: normal;
   -moz-tab-size: 4;
-  -o-tab-size: 4;
-     tab-size: 4;
+  tab-size: 4;
 }
 
 *,
@@ -60,8 +59,7 @@ abbr[title] {
   border-bottom: none; /* Remove the bottom border in Chrome 57 */
   /* Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari */
   text-decoration: underline;
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
 }
 
 a {
@@ -296,8 +294,7 @@ a {
 }
 
 img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 ol {
@@ -739,8 +736,7 @@ body.is-open {
   font-weight: 500;
   line-height: 0.5;
   border: 0px;
-  -webkit-margin-before: 0;
-          margin-block-start: 0;
+  margin-block-start: 0;
 }
 @media screen and (min-width: 768px) {
   .p-hamburger.is-open .c-txt--changeable {
@@ -894,7 +890,7 @@ body.is-open {
 
 .c-txt-headline__textbox {
   text-align: left;
-  color: #3C2A10;
+  color: #3c2a10;
   font-size: 22px;
   line-height: 1.1;
   font-weight: bold;
@@ -909,7 +905,7 @@ body.is-open {
 
 .c-txt-description__textbox {
   text-align: left;
-  color: #3C2A10;
+  color: #3c2a10;
   font-size: 16px;
   line-height: 1.5;
   font-weight: bold;
@@ -963,40 +959,64 @@ body.is-open {
   }
 }
 
-.c-txt-category__sidebar {
+.menu-item-type-taxonomy {
   position: relative;
   font-size: 24px;
   line-height: 1.5;
   font-weight: bold;
   text-align: left;
   left: 10%;
-  margin-bottom: 40px;
 }
 
-.c-txt-itemname__sidebar {
+.menu-item-type-taxonomy > a {
+  color: #707070;
+  display: inline-block;
+  padding-bottom: 40px;
+}
+
+.menu-item-type-post_type {
   position: relative;
   font-size: 20px;
   line-height: 1.5;
   font-weight: normal;
-  -moz-text-align-last: left;
-       text-align-last: left;
-  left: 15%;
+  text-align-last: left;
+  left: 5%;
 }
-.c-txt-itemname__sidebar:last-child {
+.menu-item-type-post_type:last-child {
   padding-bottom: 40px;
 }
+.menu-item-type-post_type:last-child > a:last-child {
+  padding-bottom: 30px;
+}
 
-.c-txt-itemname__sidebar + .c-txt-itemname__sidebar {
+.menu-item-type-post_type > a {
+  color: #707070;
+  display: inline-block;
+}
+
+.menu-item-type-post_type + .menu-item-type-post_type {
   margin-top: 23px;
 }
 
-.c-txt-headline__footer {
+.l-footer ul {
+  display: flex;
+  justify-content: center;
+}
+
+.page_item > a {
   display: inline-block;
+  color: #ffffff;
   font-size: 20px;
   font-weight: normal;
   line-height: 29px;
   padding-top: 40px;
   padding-bottom: 30px;
+}
+
+.page-item-23::after {
+  content: "|";
+  font-size: 20px;
+  padding: 0 8px;
 }
 
 .c-txt-copyright__footer {
@@ -1034,7 +1054,7 @@ body.is-open {
 
 .c-txt-search-result--archive {
   text-align: left;
-  color: #3C2A10;
+  color: #3c2a10;
   font-size: 23px;
   line-height: 1.5;
   font-weight: bold;
@@ -1042,7 +1062,7 @@ body.is-open {
 
 .c-txt-headline__menunav__archive {
   text-align: left;
-  color: #3C2A10;
+  color: #3c2a10;
   font-size: 23px;
   line-height: 1.5;
   font-weight: bold;
@@ -1051,7 +1071,7 @@ body.is-open {
 
 .c-txt-explanation__menunav__archive {
   text-align: left;
-  color: #3C2A10;
+  color: #3c2a10;
   font-size: 13px;
   line-height: 1.5;
   font-weight: bold;
@@ -1140,7 +1160,7 @@ body.is-open {
 
 .c-txt-headline-h2--single {
   text-align: left;
-  color: #3C2A10;
+  color: #3c2a10;
   font-size: 24px;
   line-height: 1.5;
   font-weight: bold;
@@ -1148,7 +1168,7 @@ body.is-open {
 
 .c-txt-description-p--single {
   text-align: left;
-  color: #3C2A10;
+  color: #3c2a10;
   font-size: 11px;
   line-height: 1.5;
   font-weight: bold;
@@ -1157,7 +1177,7 @@ body.is-open {
 
 .c-txt-headline-h3--single {
   text-align: left;
-  color: #3C2A10;
+  color: #3c2a10;
   font-size: 19px;
   line-height: 1.5;
   font-weight: bold;
@@ -1165,7 +1185,7 @@ body.is-open {
 
 .c-txt-headline-h4--single {
   text-align: left;
-  color: #3C2A10;
+  color: #3c2a10;
   font-size: 13px;
   line-height: 1.5;
   font-weight: bold;
@@ -1173,7 +1193,7 @@ body.is-open {
 
 .c-txt-headline-h5--single {
   text-align: left;
-  color: #3C2A10;
+  color: #3c2a10;
   font-size: 13px;
   line-height: 1.5;
   font-weight: bold;
@@ -1181,7 +1201,7 @@ body.is-open {
 
 .c-txt-headline-h6--single {
   text-align: left;
-  color: #3C2A10;
+  color: #3c2a10;
   font-size: 13px;
   line-height: 1.5;
   font-weight: bold;
@@ -1189,7 +1209,7 @@ body.is-open {
 
 .c-txt-quote-description--single {
   text-align: left;
-  color: #3C2A10;
+  color: #3c2a10;
   font-size: 13px;
   line-height: 1.5;
   font-weight: bold;
@@ -1198,7 +1218,7 @@ body.is-open {
 
 .c-txt-quote-source--single {
   text-align: left;
-  color: #3C2A10;
+  color: #3c2a10;
   font-size: 13px;
   line-height: 1.5;
   font-weight: bold;
@@ -1207,7 +1227,7 @@ body.is-open {
 
 .c-txt-long-description-itemcard--single {
   text-align: left;
-  color: #3C2A10;
+  color: #3c2a10;
   font-size: 11px;
   line-height: 1.5;
   font-weight: bold;
@@ -1217,7 +1237,7 @@ body.is-open {
 
 .c-txt-table-head--single {
   text-align: left;
-  color: #3C2A10;
+  color: #3c2a10;
   font-size: 12px;
   line-height: 1.5;
   font-weight: bold;
@@ -1226,7 +1246,7 @@ body.is-open {
 
 .c-txt-table-data--single {
   text-align: left;
-  color: #3C2A10;
+  color: #3c2a10;
   font-size: 12px;
   line-height: 1.5;
   font-weight: bold;
@@ -1235,7 +1255,7 @@ body.is-open {
 
 .c-txt-bold--single {
   text-align: left;
-  color: #3C2A10;
+  color: #3c2a10;
   font-size: 11px;
   line-height: 1.5;
   font-weight: bold;

@@ -1,4 +1,4 @@
-@use '../../foundation/mixin' as mix;
+@use "../../foundation/mixin" as mix;
 
 //--top-page--
 //header
@@ -52,7 +52,7 @@
 
 .c-txt-headline__textbox {
   text-align: left;
-  color: #3C2A10;
+  color: #3c2a10;
   font-size: 22px;
   line-height: 1.1;
   font-weight: bold;
@@ -64,7 +64,7 @@
 }
 
 .c-txt-description__textbox {
-  @include mix.txt(16px,#3C2A10);
+  @include mix.txt(16px, #3c2a10);
   font-weight: normal;
   margin: 15px auto 15px 10px;
   padding-bottom: 10px;
@@ -72,7 +72,7 @@
 
 //map
 .c-txt-headline__map {
-  @include mix.txt(22px,#ffffff);
+  @include mix.txt(22px, #ffffff);
   position: relative;
   line-height: 2.5;
   width: 80%;
@@ -87,7 +87,7 @@
   }
 }
 .c-txt-long__map {
-  @include mix.txt(14px,#ffffff);
+  @include mix.txt(14px, #ffffff);
   position: relative;
   left: 10%;
   padding-top: 30px;
@@ -102,39 +102,67 @@
 }
 
 //sidebar
-.c-txt-category__sidebar {
+.menu-item-type-taxonomy {
   position: relative;
   font-size: 24px;
   line-height: 1.5;
   font-weight: bold;
   text-align: left;
   left: 10%;
-  margin-bottom: 40px;
 }
-.c-txt-itemname__sidebar {
+
+.menu-item-type-taxonomy > a {
+  color: #707070;
+  display: inline-block;
+  padding-bottom: 40px;
+}
+
+.menu-item-type-post_type {
   position: relative;
   font-size: 20px;
   line-height: 1.5;
   font-weight: normal;
   text-align-last: left;
-  left: 15%;
+  left: 5%;
   &:last-child {
     padding-bottom: 40px;
   }
+  &:last-child > a:last-child {
+    padding-bottom: 30px;
+  }
 }
-.c-txt-itemname__sidebar + .c-txt-itemname__sidebar {
+
+.menu-item-type-post_type > a {
+  color: #707070;
+  display: inline-block;
+}
+
+.menu-item-type-post_type + .menu-item-type-post_type {
   margin-top: 23px;
 }
 
 //footer
-.c-txt-headline__footer {
+.l-footer ul {
+  display: flex;
+  justify-content: center;
+}
+
+.page_item > a {
   display: inline-block;
+  color: #ffffff;
   font-size: 20px;
   font-weight: normal;
   line-height: 29px;
   padding-top: 40px;
   padding-bottom: 30px;
 }
+
+.page-item-23::after {
+  content: "|";
+  font-size: 20px;
+  padding: 0 8px;
+}
+
 .c-txt-copyright__footer {
   font-size: 14px;
   font-weight: normal;
@@ -145,55 +173,55 @@
 //--archive-page--
 //main-visual
 .c-txt-headline--mainvisual {
-  @include mix.txt(25px,#ffffff);
+  @include mix.txt(25px, #ffffff);
   @include mix.mq(tab) {
-    @include mix.txt(39px,#ffffff);
+    @include mix.txt(39px, #ffffff);
   }
 }
 
 .c-txt-search-result--search {
-  @include mix.txt(13px,#ffffff);
+  @include mix.txt(13px, #ffffff);
   font-weight: normal;
 }
 
 .c-txt-search-result--archive {
-  @include mix.txt(23px,#3C2A10);
+  @include mix.txt(23px, #3c2a10);
 }
 
 //menunav
 .c-txt-headline__menunav__archive {
-  @include mix.txt(23px,#3C2A10);
+  @include mix.txt(23px, #3c2a10);
   margin-bottom: 20px;
 }
 
 .c-txt-explanation__menunav__archive {
-  @include mix.txt(13px,#3C2A10);
+  @include mix.txt(13px, #3c2a10);
   font-weight: normal;
   line-height: 2;
 }
 
 .c-txt-itemname__menunav__archive {
-  @include mix.txt(16px,#ffffff);
+  @include mix.txt(16px, #ffffff);
   position: absolute;
   top: 10%;
   left: 7%;
   @include mix.mq(pc) {
-    @include mix.txt(25px,#ffffff);
+    @include mix.txt(25px, #ffffff);
   }
 }
 
 .c-txt-small-headline__menunav__archive {
-  @include mix.txt(12px,#ffffff);
+  @include mix.txt(12px, #ffffff);
   position: absolute;
   top: 25%;
   left: 7%;
   @include mix.mq(pc) {
-    @include mix.txt(18px,#ffffff);
+    @include mix.txt(18px, #ffffff);
   }
 }
 
 .c-txt-item-explanation__menunav__archive {
-  @include mix.txt(12px,white);
+  @include mix.txt(12px, white);
   font-weight: normal;
   position: absolute;
   top: 35%;
@@ -204,12 +232,12 @@
 //--single--
 //main-visual
 .c-txt-big-headline--mainvisual--single {
-  @include mix.txt(25px,#ffffff);
+  @include mix.txt(25px, #ffffff);
   position: absolute;
   top: 45%;
   left: 30%;
   @include mix.mq(tab) {
-    @include mix.txt(40px,#ffffff);
+    @include mix.txt(40px, #ffffff);
     left: 15%;
     @include mix.mq(pc) {
       left: 5%;
@@ -219,59 +247,58 @@
 
 //menunav
 .c-txt-headline-h2--single {
-  @include mix.txt(24px,#3C2A10);
+  @include mix.txt(24px, #3c2a10);
 }
 
 .c-txt-description-p--single {
-  @include mix.txt(11px,#3C2A10);
+  @include mix.txt(11px, #3c2a10);
   font-weight: normal;
 }
 
 .c-txt-headline-h3--single {
-  @include mix.txt(19px,#3C2A10);
+  @include mix.txt(19px, #3c2a10);
 }
 
 .c-txt-headline-h4--single {
-  @include mix.txt(13px,#3C2A10);
+  @include mix.txt(13px, #3c2a10);
 }
 
 .c-txt-headline-h5--single {
-  @include mix.txt(13px,#3C2A10);
+  @include mix.txt(13px, #3c2a10);
 }
 
 .c-txt-headline-h6--single {
-  @include mix.txt(13px,#3C2A10);
+  @include mix.txt(13px, #3c2a10);
 }
 
 .c-txt-quote-description--single {
-  @include mix.txt(13px,#3C2A10);
+  @include mix.txt(13px, #3c2a10);
   font-weight: normal;
 }
 
 .c-txt-quote-source--single {
-  @include mix.txt(13px,#3C2A10);
+  @include mix.txt(13px, #3c2a10);
   font-weight: normal;
 }
 
 .c-txt-long-description-itemcard--single {
-  @include mix.txt(11px,#3C2A10);
+  @include mix.txt(11px, #3c2a10);
   width: 54%;
   font-weight: normal;
 }
 
-
 .c-txt-table-head--single {
-  @include mix.txt(12px,#3C2A10);
+  @include mix.txt(12px, #3c2a10);
   font-weight: normal;
 }
 
 .c-txt-table-data--single {
-  @include mix.txt(12px,#3C2A10);
+  @include mix.txt(12px, #3c2a10);
   font-weight: normal;
 }
 
 .c-txt-bold--single {
-  @include mix.txt(11px,#3C2A10);
+  @include mix.txt(11px, #3c2a10);
   padding-bottom: 177px;
   @include mix.mq(tab) {
     padding-bottom: 228px;
