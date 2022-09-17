@@ -1336,16 +1336,19 @@ body.is-open {
 
 .label2 {
   display: inline-block;
-  width: 80px;
+  width: 18vw;
+  max-width: 100px;
 }
 @media screen and (min-width: 768px) {
   .label2 {
-    width: 130px;
+    width: 12vw;
+    max-width: 160px;
   }
 }
 @media screen and (min-width: 768px) and (min-width: 1281px) {
   .label2 {
-    width: 170px;
+    width: 12vw;
+    max-width: 190px;
   }
 }
 

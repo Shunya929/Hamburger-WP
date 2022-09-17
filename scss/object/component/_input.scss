@@ -1,4 +1,4 @@
-@use '../../foundation/mixin' as mix;
+@use "../../foundation/mixin" as mix;
 
 .form__header {
   display: flex;
@@ -25,8 +25,8 @@
     height: 46px;
     width: 100%;
     padding-left: 40px;
-    
-  }@include mix.mq(tab) {
+  }
+  @include mix.mq(tab) {
     width: 100%;
     @include mix.mq(pc) {
       width: initial;
@@ -46,11 +46,14 @@
 
 .label2 {
   display: inline-block;
-  width: 80px;
+  width: 18vw;
+  max-width: 100px;
   @include mix.mq(tab) {
-    width: 130px;
+    width: 12vw;
+    max-width: 160px;
     @include mix.mq(pc) {
-      width: 170px;
+      width: 12vw;
+      max-width: 190px;
     }
   }
 }
