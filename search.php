@@ -70,10 +70,12 @@
             </div>
           </li>
         </ul>
-        <div class="c-page__arcive">
+
+        <?php if (function_exists('wp_pagenavi')) {wp_pagenavi();} ?>
+        <!-- <div class="c-page__arcive">
           <img src="./img/archive4.svg" alt="" class="c-img__main---archive--first">
           <img src="./img/archive5.svg" alt="" class="c-img__main---archive--second">
-        </div>
+        </div> -->
       </section>
     </main>
     
