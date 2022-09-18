@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 
-  
     <main class="l-main">
       <section class="p-main-visual">
         <h2 class="c-txt-headline__mainvisual">ダミーサイト</h2>
