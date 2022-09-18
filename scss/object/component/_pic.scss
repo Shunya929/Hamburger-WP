@@ -68,7 +68,7 @@
 }
 
 .c-pic-menunav--single {
-  background-image: url('../img/single2.svg');
+  background-image: url('../img/single2.jpg');
   &--large {
     @include mix.pic(264px);
     margin-top: 60px;
@@ -106,7 +106,7 @@
 
 //--page--
 .p-mainvisual--page {
-  background-image: url('../img/page1.svg');
+  background-image: url('../img/page1.png');
   @include mix.pic(225px);
   @include mix.mq(tab) {
     @include mix.pic(500px);

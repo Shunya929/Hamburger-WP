@@ -572,7 +572,7 @@ body.is-open {
 }
 
 .c-pic-menunav--single {
-  background-image: url("../img/single2.svg");
+  background-image: url("../img/single2.jpg");
 }
 .c-pic-menunav--single--large {
   position: relative;
@@ -667,7 +667,7 @@ body.is-open {
 }
 
 .p-mainvisual--page {
-  background-image: url("../img/page1.svg");
+  background-image: url("../img/page1.png");
   position: relative;
   height: 225px;
   background-repeat: no-repeat;
