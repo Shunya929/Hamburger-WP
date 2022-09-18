@@ -28,31 +28,52 @@
 //   }
 // }
 
-/*wp-pagenavi base*/
+/*wp-pagenavi*/
 .wp-pagenavi {
-  clear: both;
   text-align: center;
+  margin: 105px auto 30px;
 }
 .wp-pagenavi a,
-.wp-pagenavi span {
-  color: #999;
-  background-color: #fff;
-  border: solid 1px #e0e0d2;
-  padding: 8px 15px;
-  margin: 0 2px;
+.wp-pagenavi span:not(.pages) {
+  color: #707070;
+  background-color: #ffffff;
   white-space: nowrap;
   transition: 0.2s ease-in-out;
   text-align: center;
   text-decoration: none;
 }
+
+.wp-pagenavi > .page {
+  border: solid 1px #e0e0d2;
+  font-size: 16px;
+}
+
+.wp-pagenavi > .pages {
+  border: none;
+  font-size: 16px;
+}
+
+.wp-pagenavi a.nextpostslink {
+  border: none;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.wp-pagenavi a.previouspostslink {
+  border: none;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
 .wp-pagenavi a:hover {
-  color: #fff;
+  color: #ffffff;
   background-color: #999;
   border-color: #999;
 }
 .wp-pagenavi span.current {
-  color: #fff;
+  color: #ffffff;
   background-color: #3c2b1c;
   border-color: #3c2b1c;
   font-weight: bold;
+  font-size: 16px;
 }
