@@ -3,7 +3,7 @@
 .c-underline--first {
   @include mix.underline(4px,45px);
   @include mix.mq(pc) {
-    @include mix.underline(4px,70px);
+    @include mix.underline(4px,60px);
   }
 }
 
