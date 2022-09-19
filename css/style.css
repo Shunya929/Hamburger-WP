@@ -666,6 +666,10 @@ body.is-open {
   }
 }
 
+.wp-image-187 {
+  padding: 60px 0;
+}
+
 .p-mainvisual--page {
   background-image: url("../img/page1.png");
   position: relative;
@@ -770,7 +774,7 @@ body.is-open {
   padding: 50px 0;
 }
 
-.c-btn__main---single {
+.wp-block-button.is-style-fill {
   color: #707070;
   background-color: #F2EDE9;
   border: solid 1px #707070;
@@ -780,13 +784,13 @@ body.is-open {
   white-space: nowrap;
 }
 @media screen and (min-width: 768px) {
-  .c-btn__main---single {
+  .wp-block-button.is-style-fill {
     height: 104px;
     width: 60%;
   }
 }
 @media screen and (min-width: 768px) and (min-width: 1281px) {
-  .c-btn__main---single {
+  .wp-block-button.is-style-fill {
     width: 31%;
   }
 }
@@ -1159,56 +1163,62 @@ body.is-open {
   }
 }
 
-.c-txt-headline-h2--single {
+.p-menunav--single h2 {
   text-align: left;
   color: #3c2a10;
   font-size: 24px;
   line-height: 1.5;
   font-weight: bold;
+  padding: 60px 0;
 }
 
-.c-txt-description-p--single {
+.p-menunav--single p {
   text-align: left;
   color: #3c2a10;
   font-size: 11px;
   line-height: 1.5;
   font-weight: bold;
   font-weight: normal;
+  padding-bottom: 60px;
 }
 
-.c-txt-headline-h3--single {
+.p-menunav--single h3 {
   text-align: left;
   color: #3c2a10;
   font-size: 19px;
   line-height: 1.5;
   font-weight: bold;
+  padding-bottom: 60px;
 }
 
-.c-txt-headline-h4--single {
+.p-menunav--single h4 {
   text-align: left;
   color: #3c2a10;
   font-size: 13px;
   line-height: 1.5;
   font-weight: bold;
+  padding-bottom: 60px;
 }
 
-.c-txt-headline-h5--single {
+.p-menunav--single h5 {
   text-align: left;
   color: #3c2a10;
   font-size: 13px;
   line-height: 1.5;
   font-weight: bold;
+  padding-bottom: 60px;
 }
 
-.c-txt-headline-h6--single {
+.p-menunav--single h6 {
   text-align: left;
   color: #3c2a10;
   font-size: 13px;
   line-height: 1.5;
   font-weight: bold;
+  padding-bottom: 60px;
 }
 
-.c-txt-quote-description--single {
+.wp-block-quote p {
   text-align: left;
   color: #3c2a10;
   font-size: 13px;
@@ -1217,7 +1227,7 @@ body.is-open {
   font-weight: normal;
 }
 
-.c-txt-quote-source--single {
+.wp-block-quote cite {
   text-align: left;
   color: #3c2a10;
   font-size: 13px;
@@ -1254,7 +1264,7 @@ body.is-open {
   font-weight: normal;
 }
 
-.c-txt-bold--single {
+p > strong {
   text-align: left;
   color: #3c2a10;
   font-size: 11px;
@@ -1263,12 +1273,12 @@ body.is-open {
   padding-bottom: 177px;
 }
 @media screen and (min-width: 768px) {
-  .c-txt-bold--single {
+  p > strong {
     padding-bottom: 228px;
   }
 }
 @media screen and (min-width: 768px) and (min-width: 1281px) {
-  .c-txt-bold--single {
+  p > strong {
     padding-bottom: 333px;
   }
 }
@@ -1447,65 +1457,68 @@ body.is-open {
   font-size: 16px;
 }
 
-.c-blockquote--single {
+.wp-block-quote {
   background-color: #F5F5F5;
+  text-align: left;
   padding: 50px;
 }
-.c-blockquote--single .c-cite--single {
-  padding-left: 15px;
+.wp-block-quote a {
+  padding-left: 5px;
 }
 
-.c-ordered-list--single {
+.p-menunav--single > ol {
   text-align: left;
+  padding-left: 50px;
 }
-.c-ordered-list--single:nth-child(2) {
-  padding-left: 18px;
+.p-menunav--single > ol:nth-of-type(2) {
+  padding-left: 68px;
 }
 
-.c-ordered-list--single + .c-ordered-list--single {
+.p-menunav--single > ol + .p-menunav--single > ol {
   margin-top: 20px;
 }
 
-.c-ordered-list--single + .c-unordered-list--single {
-  margin-top: 20px;
-}
-
-.c-unordered-list--single {
+.p-menunav--single > ul {
   text-align: left;
+  padding-left: 50px;
 }
-.c-unordered-list--single:nth-child(5) {
-  padding-left: 18px;
+.p-menunav--single > ul:nth-of-type(2) {
+  padding: 20px auto 20px 68px;
 }
 
-.c-unordered-list--single + .c-unordered-list--single {
+.p-menunav--single > ul + .p-menunav--single > ul {
   margin-top: 20px;
 }
 
-.c-table--single {
+.p-menunav--single > ol + .p-menunav--single > ul {
+  margin-top: 20px;
+}
+
+table {
   background-color: #ffffff;
   min-height: 308px;
   width: 100%;
   border-collapse: collapse;
 }
-.c-table--single .c-txt-table-head--single {
+table td:nth-child(1) {
   width: 31%;
   border: solid 1px black;
   padding-left: 20px;
 }
-.c-table--single .c-txt-table-data--single {
+table td:nth-child(2) {
   width: 69%;
   border: solid 1px black;
   padding-left: 20px;
 }
 
-.c-code--single {
+pre {
   min-height: 237px;
   background-color: #F5F5F5;
   text-align: left;
   padding-left: 33px;
   margin-bottom: 50px;
 }
-.c-code--single .c-txt-code--single--right {
+pre .c-txt-code--single--right {
   padding-left: 26px;
 }
 

@@ -246,37 +246,43 @@
 }
 
 //menunav
-.c-txt-headline-h2--single {
+.p-menunav--single h2 {
   @include mix.txt(24px, #3c2a10);
+  padding: 60px 0;
 }
 
-.c-txt-description-p--single {
+.p-menunav--single p {
   @include mix.txt(11px, #3c2a10);
   font-weight: normal;
+  padding-bottom: 60px;
 }
 
-.c-txt-headline-h3--single {
+.p-menunav--single h3 {
   @include mix.txt(19px, #3c2a10);
+  padding-bottom: 60px;
 }
 
-.c-txt-headline-h4--single {
+.p-menunav--single h4 {
   @include mix.txt(13px, #3c2a10);
+  padding-bottom: 60px;
 }
 
-.c-txt-headline-h5--single {
+.p-menunav--single h5 {
   @include mix.txt(13px, #3c2a10);
+  padding-bottom: 60px;
 }
 
-.c-txt-headline-h6--single {
+.p-menunav--single h6 {
   @include mix.txt(13px, #3c2a10);
+  padding-bottom: 60px;
 }
 
-.c-txt-quote-description--single {
+.wp-block-quote p {
   @include mix.txt(13px, #3c2a10);
   font-weight: normal;
 }
 
-.c-txt-quote-source--single {
+.wp-block-quote cite {
   @include mix.txt(13px, #3c2a10);
   font-weight: normal;
 }
@@ -297,7 +303,7 @@
   font-weight: normal;
 }
 
-.c-txt-bold--single {
+p > strong {
   @include mix.txt(11px, #3c2a10);
   padding-bottom: 177px;
   @include mix.mq(tab) {

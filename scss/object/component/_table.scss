@@ -1,20 +1,18 @@
 @use '../../foundation/mixin' as mix;
 
-.c-table--single {
+table {
   background-color: #ffffff;
   min-height: 308px;
   width: 100%;
   border-collapse: collapse;
-  .c-txt-table-head--single {
+  td:nth-child(1) {
     width: 31%;
     border: solid 1px black;
     padding-left: 20px;
   }
-  .c-txt-table-data--single {
+  td:nth-child(2) {
     width: 69%;
     border: solid 1px black;
     padding-left: 20px;
   }
-
-
 }
