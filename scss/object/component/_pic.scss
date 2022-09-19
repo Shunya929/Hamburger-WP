@@ -104,6 +104,13 @@
   }
 }
 
+.wp-block-media-text.alignwide.is-stacked-on-mobile {
+  
+}
+
+.wp-block-media-text.alignwide.has-media-on-the-right.is-stacked-on-mobile {
+}
+
 .wp-image-187 {
   padding: 60px 0;
 }
@@ -115,4 +122,12 @@
   @include mix.mq(tab) {
     @include mix.pic(500px);
   }
+}
+
+.aligncenter.size-large.is-resized {
+  padding-bottom: 40px;
+}
+
+.wp-container-2.wp-block-gallery-1.wp-block-gallery.has-nested-images.columns-default.is-cropped {
+  padding-bottom: 60px;
 }

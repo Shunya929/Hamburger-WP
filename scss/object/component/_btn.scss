@@ -85,8 +85,7 @@
   padding: 50px 0;
 }
 
-.wp-block-button.is-style-fill {
-  color: #707070;
+.wp-block-button {
   background-color: #F2EDE9;
   border: solid 1px #707070;
   border-radius: 20px;
@@ -99,5 +98,8 @@
     @include mix.mq(pc) {
       width: 31%;
     }
+  }
+  .wp-block-button__link {
+    color: #707070;
   }
 }
