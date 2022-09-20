@@ -1,37 +1,10 @@
 @use "../../foundation/mixin" as mix;
-// .c-page__arcive {
-//   height: 170px;
-//   .c-img__main---archive--first {
-//     display: none;
-//     padding-top: 100px;
-//     margin: 0 auto;
-//   }
-//   .c-img__main---archive--second {
-//     width: 90%;
-//     padding-top: 100px;
-//   }
-//   @include mix.mq(tab) {
-//     .c-img__main---archive--first {
-//       display: block;
-//       margin: 0 auto;
-//       padding-top: 100px;
-//     }
-//     .c-img__main---archive--second {
-//       display: none;
-//     }
-//     @include mix.mq(pc) {
-//       height: 249px;
-//       .c-img__main---archive--first {
-//         padding-top: 150px;
-//       }
-//     }
-//   }
-// }
 
 /*wp-pagenavi*/
 .wp-pagenavi {
   text-align: center;
-  margin: 105px auto 30px;
+  padding: 105px 0 30px;
+  vertical-align: middle;
 }
 .wp-pagenavi a,
 .wp-pagenavi span:not(.pages) {
@@ -45,7 +18,7 @@
 
 .wp-pagenavi > .page {
   border: solid 1px #e0e0d2;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .wp-pagenavi > .pages {
@@ -54,15 +27,29 @@
 }
 
 .wp-pagenavi a.nextpostslink {
+  background-color: #FFFDFA;
   border: none;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: lighter;
+  margin: 0 5px;
 }
 
 .wp-pagenavi a.previouspostslink {
+  background-color: #FFFDFA;
   border: none;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: lighter;
+  margin: 0 5px;
+}
+
+a.page.smaller {
+  padding: 8px;
+  margin: 0 5px;
+}
+
+a.page.larger {
+  padding: 8px;
+  margin: 0 5px;
 }
 
 .wp-pagenavi a:hover {
@@ -70,10 +57,12 @@
   background-color: #999;
   border-color: #999;
 }
-.wp-pagenavi span.current {
+.wp-pagenavi > span.current {
   color: #ffffff;
   background-color: #3c2b1c;
   border-color: #3c2b1c;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
+  padding: 8px;
+  margin: 0 5px;
 }
