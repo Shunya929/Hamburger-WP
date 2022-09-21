@@ -42,5 +42,14 @@ function register_my_menus() {
     ) );
   }
   add_action( 'after_setup_theme', 'register_my_menus' );
- 
+
+  // function getPostImages($mypost){
+  //   if(empty($mypost)){
+  //     return(null);
+  //   }
+  //   if(preg_match_all('/<a [^>]*"(http:[^">]*\/wp-content\/uploads\/[^">]*)"[^>]*>/u',$mypost->post_content,$img_array)){
+  //     $resultArray = $img_array[1];
+  //   }
+  //   return($resultArray);
+  // }
   

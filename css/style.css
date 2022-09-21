@@ -380,6 +380,7 @@ body.is-open {
     display: grid;
     grid-template-columns: 1fr 19%;
     grid-template-rows: 217px 1fr 150px;
+    height: 100%;
   }
   .l-container .l-header {
     grid-column-start: 1;
@@ -549,25 +550,14 @@ body.is-open {
   }
 }
 
-.p-mainvisual--single {
-  background-image: url("../img/single1.svg");
-  position: relative;
+.attachment-full.size-full.wp-post-image {
+  text-align: center;
   height: 225px;
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: bottom;
-  background-size: cover;
-  overflow-x: hidden;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
-  .p-mainvisual--single {
-    position: relative;
+  .attachment-full.size-full.wp-post-image {
     height: 500px;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: bottom;
-    background-size: cover;
-    overflow-x: hidden;
   }
 }
 

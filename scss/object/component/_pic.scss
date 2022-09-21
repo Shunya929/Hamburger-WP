@@ -58,11 +58,12 @@
 }
 
 //--single--
-.p-mainvisual--single {
-  background-image: url("../img/single1.svg");
-  @include mix.pic(225px);
+.attachment-full.size-full.wp-post-image {
+  text-align: center;
+  height: 225px;
+  width: 100%;
   @include mix.mq(tab) {
-    @include mix.pic(500px);
+    height: 500px;
   }
 }
 
@@ -145,6 +146,7 @@ figure.wp-container-2.wp-block-gallery-1.wp-block-gallery.has-nested-images.colu
 
 .l-main
   > .p-menunav--single
-  > .wp-block-gallery.has-nested-images figure.wp-block-image {
+  > .wp-block-gallery.has-nested-images
+  figure.wp-block-image {
   flex-grow: 0;
 }

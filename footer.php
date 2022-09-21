@@ -4,7 +4,6 @@
     'theme_location'  => 'フッターメニュー' 
   ) ); 
 ?>
-      
   <small class="c-txt-copyright__footer">
     Copyright: RaiseTech
   </small>

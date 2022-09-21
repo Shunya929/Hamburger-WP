@@ -10,8 +10,8 @@
       </section>
       <section class="p-menunav__archive">
         <div class="c-textbox__menunav__archive">
-          <h2 class="c-txt-headline__menunav__archive">小見出しが入ります</h2>
-          <p class="c-txt-explanation__menunav__archive">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+          <h2 class="c-txt-headline__menunav__archive"></h2>
+          <p class="c-txt-explanation__menunav__archive"></p>
         </div>
         <?php if ( have_posts() ) : ?>
           <ul class="l-container__menunav__archive">
@@ -31,6 +31,8 @@
           </ul>
           <?php else : ?>
           <p>まだ投稿がありません。</p>
+          <?php echo '<h2 class="page-title">検索結果：一致するページは見つかりませんでした。</h2>';
+	        get_template_part( 'content', 'none' );// 結果がない場合にcontent_none.phpを表示させる場合. ?>
         <?php endif; ?>
           
         <?php if (function_exists('wp_pagenavi')) {wp_pagenavi();} ?>
