@@ -51,13 +51,10 @@
 }
 
 .c-txt-headline__textbox {
-  text-align: left;
-  color: #3c2a10;
-  font-size: 22px;
-  line-height: 1.1;
-  font-weight: bold;
-  margin: 15px auto 15px 10px;
-  padding-top: 10px;
+  @include mix.txt(22px, #3c2a10);
+  line-height: 0.8;
+  display: block;
+  padding: 22px 0 0 12px ;
   @include mix.mq(pc) {
     font-size: 24px;
   }

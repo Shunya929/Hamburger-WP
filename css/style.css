@@ -718,6 +718,10 @@ figure.wp-container-2.wp-block-gallery-1.wp-block-gallery.has-nested-images.colu
   }
 }
 
+.l-main > .p-menunav--single > .wp-block-gallery.has-nested-images figure.wp-block-image {
+  flex-grow: 0;
+}
+
 .c-btn__header {
   color: #707070;
   background-color: #F2EDE9;
@@ -779,7 +783,6 @@ figure.wp-container-2.wp-block-gallery-1.wp-block-gallery.has-nested-images.colu
   position: absolute;
   left: 30%;
   bottom: 10%;
-  color: #707070;
   background-color: #FFFFFF;
   border-radius: 20px;
   height: 42px;
@@ -793,6 +796,9 @@ figure.wp-container-2.wp-block-gallery-1.wp-block-gallery.has-nested-images.colu
     left: 25%;
     border-radius: 40px;
   }
+}
+.c-btn__main--archive a {
+  color: #707070;
 }
 
 .c-form__main--single {
@@ -944,10 +950,11 @@ figure.wp-container-2.wp-block-gallery-1.wp-block-gallery.has-nested-images.colu
   text-align: left;
   color: #3c2a10;
   font-size: 22px;
-  line-height: 1.1;
+  line-height: 1.5;
   font-weight: bold;
-  margin: 15px auto 15px 10px;
-  padding-top: 10px;
+  line-height: 0.8;
+  display: block;
+  padding: 22px 0 0 12px;
 }
 @media screen and (min-width: 1281px) {
   .c-txt-headline__textbox {

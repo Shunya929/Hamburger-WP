@@ -4,7 +4,7 @@
       <section class="p-mainvisual--archive">
         <div class="c-txt-container__mainvisual">
           <h2 class="c-txt-headline--mainvisual">Menu:</h2>
-          <p class="c-txt-search-result--search">チーズバーガー</p>
+          <p class="c-txt-search-result--search"><?php the_title(); ?></p>
         </div>
       </section>
       <section class="p-menunav__archive">
@@ -22,7 +22,7 @@
                   <h3 class="c-txt-small-headline__menunav__archive">小見出しが入ります</h3>
                   <p class="c-txt-item-explanation__menunav__archive">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                   <label for="">
-                    <button class="c-btn__main--archive">詳しく見る</button>
+                    <button class="c-btn__main--archive"><a href="<?php the_permalink(); ?>">詳しく見る</a></button>
                   </label>
                 </div>
               </li>
