@@ -17,24 +17,6 @@ add_theme_support( 'menus' );
 add_theme_support( 'title-tag' );
 add_theme_support( 'post-thumbnails' );
 
-//サイドバーにウィジェット追加
-// function wpbeg_widgets_init() {
-//     register_sidebar (
-//         array(
-//             'name'          => 'カテゴリーウィジェット',
-//             'id'            => 'category_widget',
-//             'description'   => 'カテゴリー用ウィジェットです',
-//             'before_widget' => '<li id="%1$s" class="c-txt-itemname__sidebar">',
-//             'after_widget'  => '</li>',
-//             'before_title'  => '<a class="c-txt-category__sidebar"><i class="c-txt-category__sidebar" aria-hidden="true"></i>',
-//             'after_title'   => "</a>\n",
-//         )
-//     );
-// }
-// add_action( 'widgets_init', 'wpbeg_widgets_init' );
-    
-
-
 function register_my_menus() { 
     register_nav_menus( array( 
       'sidemenu' => 'サイドバー',
@@ -43,13 +25,20 @@ function register_my_menus() {
   }
   add_action( 'after_setup_theme', 'register_my_menus' );
 
-  // function getPostImages($mypost){
-  //   if(empty($mypost)){
-  //     return(null);
-  //   }
-  //   if(preg_match_all('/<a [^>]*"(http:[^">]*\/wp-content\/uploads\/[^">]*)"[^>]*>/u',$mypost->post_content,$img_array)){
-  //     $resultArray = $img_array[1];
-  //   }
-  //   return($resultArray);
-  // }
+  
+function my_posts_control($query)
+{
+  if (is_admin() || !$query->is_main_query()) {
+    return;
+  }
+  if ($query->is_search()) {
+    $query->set('posts_per_page', '5');
+    return;
+  }
+  if ($query->is_archive()) {
+    $query->set('posts_per_page', '3');
+    return;
+  }
+}
+add_action('pre_get_posts', 'my_posts_control');
   
