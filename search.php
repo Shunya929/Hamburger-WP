@@ -2,7 +2,7 @@
   
     <main class="l-main">
       <section class="p-mainvisual--archive p-mainvisual--archive--search">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/archive 1.png" alt="" class="c-pic-mainvisual--archive">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/archive-1-2.png" alt="" class="c-pic-mainvisual--archive">
         <div class="c-txt-container__mainvisual">
           <h2 class="c-txt-headline--mainvisual">Search:</h2>
           <p class="c-txt-search-result--search"><?php echo get_search_query(); ?></p>
@@ -17,7 +17,7 @@
           <ul class="l-container__menunav__archive">
             <?php while( have_posts() ) : the_post(); ?>
               <li class="c-item-menu__archive">
-                <div class="c-pic__menunav__archive"></div>
+                <div class="c-pic__menunav__archive"><?php the_post_thumbnail('full');?></div>
                 <div class="c-itemcard__menunav__archive">
                   <h2 class="c-txt-itemname__menunav__archive">チーズバーガー</h2>
                   <h3 class="c-txt-small-headline__menunav__archive">小見出しが入ります</h3>

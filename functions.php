@@ -25,7 +25,7 @@ function register_my_menus() {
   }
   add_action( 'after_setup_theme', 'register_my_menus' );
 
-  
+
 function my_posts_control($query)
 {
   if (is_admin() || !$query->is_main_query()) {
@@ -42,3 +42,11 @@ function my_posts_control($query)
 }
 add_action('pre_get_posts', 'my_posts_control');
   
+$custom_query = new WP_Query(
+      array(
+        'post_type' => 'custom',
+        's' => get_search_query(),
+        'orderby' => 'rand', //ランダムに
+        'posts_per_page' => 8, //8件
+        )
+        );

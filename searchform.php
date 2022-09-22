@@ -4,6 +4,6 @@
     <input type="text" name="s" id = "s" class="c-input__header" value="<?php the_search_query(); ?>" placeholder="入力してください">
   </label>
   <label for="" class="label2">
-    <button type="button" name="s" id = "s" value="検索" class="c-btn__header">検索</button>
+    <button type="submit" name="s" id = "s" value="検索" class="c-btn__header">検索</button>
   </label>
  </form>

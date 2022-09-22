@@ -23,7 +23,19 @@
 
 //--archive--
 .p-mainvisual--archive {
-  background-image: url("../img/archive\ 1.png");
+  background-image: url("../img/archive-1-2.png");
+  opacity: 0.5;
+  @include mix.pic(283px);
+  @include mix.mq(pc) {
+    @include mix.pic(239px);
+  }
+  &--search {
+    background-image: none;
+  }
+}
+
+.c-pic-mainvisual--archive {
+  opacity: 0.8;
   @include mix.pic(283px);
   @include mix.mq(pc) {
     @include mix.pic(239px);
@@ -34,7 +46,7 @@
 }
 
 .c-pic__menunav__archive {
-  background-image: url("../img/archive2.svg");
+  overflow: hidden;
   @include mix.pic(230px);
   @include mix.mq(tab) {
     @include mix.pic(354px);
