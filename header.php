@@ -18,7 +18,7 @@
         </button>
       </div>
       <div class="l-flex-container__header">
-        <h1 class="c-txt-headline__header"><?php bloginfo( 'name' ); ?></h1>
+        <h1 class="c-txt-headline__header"><a href="<?php echo home_url( '/' ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
 
         <?php get_search_form(); ?>
         

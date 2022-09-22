@@ -380,7 +380,6 @@ body.is-open {
     display: grid;
     grid-template-columns: 1fr 19%;
     grid-template-rows: 217px 1fr 150px;
-    height: 100%;
   }
   .l-container .l-header {
     grid-column-start: 1;
@@ -885,6 +884,9 @@ figure.wp-container-2.wp-block-gallery-1.wp-block-gallery.has-nested-images.colu
   .c-txt-headline__header {
     padding: initial;
   }
+}
+.c-txt-headline__header a {
+  color: #707070;
 }
 
 .c-txt-headline__mainvisual {
