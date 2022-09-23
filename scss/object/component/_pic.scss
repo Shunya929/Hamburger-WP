@@ -162,3 +162,22 @@ figure.wp-container-2.wp-block-gallery-1.wp-block-gallery.has-nested-images.colu
   figure.wp-block-image {
   flex-grow: 0;
 }
+
+
+.l-main
+  > .p-menunav--single
+  >.wp-block-image:not(.is-style-rounded)>a, .wp-block-image:not(.is-style-rounded) img:nth-of-type(1) {
+    height: 350px;
+  }
+
+  .l-main
+  > .p-menunav--single
+  > .wp-block-image {
+    margin: 60px 0;
+}
+
+.l-main
+> .p-menunav--single
+> .wp-block-media-text {
+  margin: 60px 0;
+}
