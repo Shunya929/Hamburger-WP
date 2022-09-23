@@ -19,7 +19,7 @@
               <li class="c-item-menu__archive">
                 <div class="c-pic__menunav__archive"><?php the_post_thumbnail('full');?></div>
                 <div class="c-itemcard__menunav__archive">
-                  <h2 class="c-txt-itemname__menunav__archive">チーズバーガー</h2>
+                  <h2 class="c-txt-itemname__menunav__archive"><?php the_title(); ?></h2>
                   <h3 class="c-txt-small-headline__menunav__archive">小見出しが入ります</h3>
                   <p class="c-txt-item-explanation__menunav__archive">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                   <label for="">

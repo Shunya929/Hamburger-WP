@@ -42,11 +42,49 @@ function my_posts_control($query)
 }
 add_action('pre_get_posts', 'my_posts_control');
   
-$custom_query = new WP_Query(
-      array(
-        'post_type' => 'custom',
-        's' => get_search_query(),
-        'orderby' => 'rand', //ランダムに
-        'posts_per_page' => 8, //8件
-        )
-        );
+// $custom_query = new WP_Query(
+//       array(
+//         'post_type' => 'custom',
+//         's' => get_search_query(),
+//         'orderby' => 'rand', //ランダムに
+//         'posts_per_page' => 8, //8件
+//         )
+//         );
+
+function SearchFilter( $query ) {
+	if ( $query -> is_search ) {
+		$query -> set( 'post_type', 'post' );
+	}
+	return $query;
+}
+add_filter( 'pre_get_posts', 'SearchFilter' );
+
+$search_words = explode(' ', isset($wp_query->query_vars['s']) ? $wp_query->query_vars['s'] : '');
+  if (count($search_words) > 0) {
+    $search = '';
+    foreach ($search_words as $word) {
+      if (!empty($word)) {
+        $search_word = $wpdb->_escape("%{$word}%");
+        $search .= " AND (
+						{$wpdb->posts}.post_title LIKE '{$search_word}'
+           
+						-- OR {$wpdb->posts}.post_content LIKE '{$search_word}'
+            -- // 検索結果に投稿内容を含めたい場合はコメントアウトを解除
+						OR {$wpdb->posts}.ID IN (
+							SELECT distinct r.object_id
+							FROM {$wpdb->term_relationships} AS r
+							INNER JOIN {$wpdb->term_taxonomy} AS tt ON r.term_taxonomy_id = tt.term_taxonomy_id
+							INNER JOIN {$wpdb->terms} AS t ON tt.term_id = t.term_id
+							WHERE t.name LIKE '{$search_word}'
+						OR t.slug LIKE '{$search_word}'
+						OR tt.description LIKE '{$search_word}'
+						)
+						OR {$wpdb->posts}.ID IN (
+							SELECT distinct p.post_id
+							FROM {$wpdb->postmeta} AS p
+							WHERE p.meta_value LIKE '{$search_word}'
+						)
+				) ";
+      }
+    }
+  }
