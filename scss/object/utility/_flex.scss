@@ -14,24 +14,6 @@
 
 //--single--
 //menunav
-.l-flex-container--single--first {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 60px;
-}
-
-.l-flex-container--single--second {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 60px;
-  .c-pic-menunav--single--medium {
-    order: 2;
-  }
-  .c-txt-long-description-itemcard--single {
-    order: 1;
-  }
-}
-
 .c-txt-container__mainvisual {
   gap: 6px;
   position: absolute;
