@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="<?php language_attributes(); ?>">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +10,7 @@
   <?php wp_head(); ?>
 </head>
 <body class="js-body" <?php body_class(); ?>>
+<?php wp_body_open(); ?>
   <article class="l-container">
     <header class="l-header">
       <div class="c-button__sidebar">
@@ -18,7 +19,7 @@
         </button>
       </div>
       <div class="l-flex-container__header">
-        <h1 class="c-txt-headline__header"><a href="<?php echo home_url( '/' ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+        <h1 class="c-txt-headline__header"><a href="<?php echo esc_url(home_url()); ?>"><?php bloginfo( 'name' ); ?></a></h1>
 
         <?php get_search_form(); ?>
         

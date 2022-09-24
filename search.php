@@ -2,7 +2,7 @@
   
     <main class="l-main">
       <section class="p-mainvisual--archive p-mainvisual--archive--search">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/archive-1-2.png" alt="" class="c-pic-mainvisual--archive">
+        <img src="<?php esc_url( get_template_directory_uri() . '/img/archive-1-2.png' ); ?>" alt="" class="c-pic-mainvisual--archive">
         <div class="c-txt-container__mainvisual">
           <h2 class="c-txt-headline--mainvisual">Search:</h2>
           <p class="c-txt-search-result--search"><?php echo get_search_query(); ?></p>
