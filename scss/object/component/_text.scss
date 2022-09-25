@@ -307,9 +307,9 @@ p > strong {
   @include mix.txt(11px, #3c2a10);
   padding-bottom: 177px;
   @include mix.mq(tab) {
-    padding-bottom: 228px;
+    padding-bottom: 28px;
     @include mix.mq(pc) {
-      padding-bottom: 333px;
+      padding-bottom: 33px;
     }
   }
 }

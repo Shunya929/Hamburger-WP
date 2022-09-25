@@ -330,6 +330,7 @@ body.is-open {
 
 .l-main {
   background-color: #FFFDFA;
+  min-height: 100vh;
 }
 
 .l-sidebar {
@@ -341,6 +342,7 @@ body.is-open {
   top: 0;
   left: 100%;
   transition: 0.3s;
+  padding-bottom: 220px;
 }
 .l-sidebar .l-wrapper__sidebar {
   position: relative;
@@ -377,7 +379,7 @@ body.is-open {
   .l-container {
     display: grid;
     grid-template-columns: 1fr 19%;
-    grid-template-rows: 217px 1fr 100% 150px;
+    grid-template-rows: 217px auto 150px;
   }
   .l-container .l-header {
     grid-column-start: 1;
@@ -389,19 +391,19 @@ body.is-open {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
-    grid-row-end: 4;
+    grid-row-end: 3;
   }
   .l-container .l-sidebar {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
-    grid-row-end: 4;
+    grid-row-end: 3;
   }
   .l-container .l-footer {
     grid-column-start: 1;
     grid-column-end: 3;
-    grid-row-start: 4;
-    grid-row-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
   }
 }
 .l-container__menunav__archive {
@@ -1345,12 +1347,12 @@ p > strong {
 }
 @media screen and (min-width: 768px) {
   p > strong {
-    padding-bottom: 228px;
+    padding-bottom: 28px;
   }
 }
 @media screen and (min-width: 768px) and (min-width: 1281px) {
   p > strong {
-    padding-bottom: 333px;
+    padding-bottom: 33px;
   }
 }
 
@@ -1468,7 +1470,7 @@ p > strong {
 /*wp-pagenavi*/
 .wp-pagenavi {
   text-align: center;
-  padding: 105px 0 30px;
+  padding: 105px 0 50px;
   vertical-align: middle;
 }
 
