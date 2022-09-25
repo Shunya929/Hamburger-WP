@@ -1,2 +1,2 @@
 # hamburger-site-design
-git test
+最終課題のハンバーガーサイトです
