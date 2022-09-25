@@ -2,6 +2,7 @@
   
     <main class="l-main">
       <section class="p-mainvisual--archive">
+      <img src="<?php echo esc_url( get_template_directory_uri() . '/img/archive1.png' ); ?>" alt="" class="c-pic-mainvisual--archive">
         <div class="c-txt-container__mainvisual">
           <h2 class="c-txt-headline--mainvisual">Menu:</h2>
           <p class="c-txt-search-result--search"><?php echo single_cat_title(); ?></p>

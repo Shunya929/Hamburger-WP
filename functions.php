@@ -1,17 +1,18 @@
 <?php
 function add_files()
 {
+  //jquery-3.6.0.min
+  wp_enqueue_script('jquery', get_theme_file_uri('/js/jquery-3.6.0.min.js'), array('jquery'));
   // main.js
-  wp_enqueue_script('jq', get_theme_file_uri('/js/jquery-3.6.0.min.js'), array('jquery'));
   wp_enqueue_script('main-js', get_theme_file_uri('/js/main.js'), 'jquery', '1.0.0', true);
   //リセットcss
   wp_enqueue_style('reset-css', get_theme_file_uri('/scss/foundation/reset'), array(), '1.4.0');
   //メインのcssファイル
   wp_enqueue_style('style-css', get_stylesheet_uri(), array(), '1.0.0');
   //FontAwesome
-  wp_enqueue_style( 'font-awesome', '//use.fontawesome.com/releases/v6.1.1/css/all.css', array(), '6.1.1' );
+  wp_enqueue_style( 'font-awesome', '/use.fontawesome.com/releases/v6.1.1/css/all.css', array(), '6.1.1' );
 }
-add_action('wp_enqueue_scripts', 'add_files', 'readScript');
+add_action('wp_enqueue_scripts', 'add_files');
 
 add_theme_support( 'automatic-feed-links' );
 add_theme_support( 'title-tag' );
