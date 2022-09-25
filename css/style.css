@@ -30,8 +30,8 @@ html {
 }
 
 /* # =================================================================
-   # General elements
-   # ================================================================= */
+     # General elements
+     # ================================================================= */
 hr {
   overflow: visible; /* Show the overflow in Edge and IE */
   height: 0; /* Add the correct box sizing in Firefox */
@@ -114,8 +114,8 @@ iframe {
 }
 
 /* # =================================================================
-   # Forms
-   # ================================================================= */
+     # Forms
+     # ================================================================= */
 input {
   border-radius: 0;
 }
@@ -246,8 +246,8 @@ legend {
 }
 
 /* # =================================================================
-   # Specify media element style
-   # ================================================================= */
+     # Specify media element style
+     # ================================================================= */
 img {
   border-style: none; /* Remove border when inside `a` element in IE 8/9/10 */
 }
@@ -258,8 +258,8 @@ progress {
 }
 
 /* # =================================================================
-   # Accessibility
-   # ================================================================= */
+     # Accessibility
+     # ================================================================= */
 /* Specify the progress cursor of updating elements */
 [aria-busy=true] {
   cursor: progress;
@@ -276,7 +276,6 @@ progress {
 }
 
 html {
-  overflow-x: hidden;
   height: 100%;
   height: -webkit-fill-available;
 }
@@ -331,7 +330,6 @@ body.is-open {
 
 .l-main {
   background-color: #FFFDFA;
-  flex: 1;
 }
 
 .l-sidebar {
@@ -379,7 +377,7 @@ body.is-open {
   .l-container {
     display: grid;
     grid-template-columns: 1fr 19%;
-    grid-template-rows: 217px 1fr 150px;
+    grid-template-rows: 217px 1fr 100% 150px;
   }
   .l-container .l-header {
     grid-column-start: 1;
@@ -391,19 +389,19 @@ body.is-open {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-end: 4;
   }
   .l-container .l-sidebar {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
-    grid-row-end: 3;
+    grid-row-end: 4;
   }
   .l-container .l-footer {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 4;
-    grid-row-end: 4;
+    grid-row-end: 5;
   }
 }
 .l-container__menunav__archive {
@@ -1465,17 +1463,6 @@ p > strong {
     height: initial;
     width: 50%;
   }
-}
-
-.c-itemcard--medium--single {
-  padding-bottom: 60px;
-}
-
-.c-itemcard--small--single {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding-bottom: 60px;
 }
 
 /*wp-pagenavi*/
